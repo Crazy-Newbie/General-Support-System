@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+<hibernate-reverse-engineering>
+	<table name="FLEET_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="FLEET_NO" />
+		</primary-key>
+	</table>
+	<table name="OPERATOR_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="OPR_ID" />
+		</primary-key>
+	</table>
+	<table name="FLEET_REQ_DTL_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="ROW_ID" />
+		</primary-key>
+	</table>
+	<table name="FLEET_REQ_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="REQ_ID" />
+		</primary-key>
+	</table>
+	<table name="EXECUTOR_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="ROW_ID" />
+		</primary-key>
+	</table>
+	<table name="FLEET_OPR_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="ROW_ID" />
+		</primary-key>
+	</table>
+	<table name="FLEET_USAGE_HOUR" schema="FMS">
+		<primary-key>
+			<key-column name="FLEET_NO" />
+		</primary-key>
+	</table>
+	<table name="MAINT_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="MAINT_ID" />
+		</primary-key>
+	</table>
+	<table name="FLEET_SCHEDULE_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="SCHED_ID" />
+		</primary-key>
+	</table>
+	<table name="PORT_FLEET_VIEW" schema="FMS">
+		<primary-key>
+			<key-column name="FLEET_NO" />
+		</primary-key>
+	</table>
+	<table name="LHKPN_DOC_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="LHKPN_ID" />
+		</primary-key>
+	</table>
+	<table name="LHKPN_DOC_STEP_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ROW_ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_TANAH_BANGUN_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_MESIN_TRANS_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_BERGERAK_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_SURAT_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_KAS_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_HUTANG_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="HARTA_LAINNYA_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="PENERIMAAN_SUMMARY_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="LHKPN_ID" />
+		</primary-key>
+	</table>
+	<table name="PENGELUARAN_SUMMARY_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="LHKPN_ID" />
+		</primary-key>
+	</table>
+	<table name="LAMPIRAN_FASILITAS_VIEW" schema="LHKPN">
+		<primary-key>
+			<key-column name="ID" />
+		</primary-key>
+	</table>
+	<table name="EQUIP_TYPE_VIEW" schema="IMAM">
+		<primary-key>
+			<key-column name="TYPE_ID" />
+		</primary-key>
+	</table>
+	<table name="LOCATION" schema="IMAM"></table>
+	<table name="LOCATION_VIEW" schema="IMAM">
+		<primary-key>
+			<key-column name="LOCATION_ID" />
+		</primary-key>
+	</table>
+	<table name="REQUEST_VIEW" schema="GSS">
+		<primary-key>
+			<key-column name="REQ_ID" />
+		</primary-key>
+	</table>
+	<table name="TEAM_VIEW" schema="GSS">
+		<primary-key>
+			<key-column name="TEAM_ID" />
+		</primary-key>
+	</table>
+<table name="REQUEST_STATUS_VIEW" schema="GSS">
+	<primary-key>
+		<key-column name="LOG_DATE" />
+		<key-column name="REQ_ID" />
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

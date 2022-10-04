@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Fri Aug 19 16:49:04 SGT 2022
+reStrategyClass=
+detectM2M=false
+createConfigFile=true
+reSettingsFile=/gss/hibernate.reveng.xml
+profile=
+keyGenerator=
+genAnnotations=true
+detectO2O=false
+useJavaTypes=true
+sessionFactoryId=
+jndiPath=
+springDaoFile=
+basePersistenceClass=
+configFile=/gss/src/hibernate.cfg.xml
+daoSFId=
+sessionFactoryName=com.badaklng.base.hibernate.HibernateSessionFactory
+genBasicCompId=true
+genVersionTag=false

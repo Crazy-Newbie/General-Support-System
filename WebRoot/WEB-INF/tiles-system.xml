@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="mainLayout" template="/WEB-INF/jsp/templateV2/main_layout.jsp">
+		<put-attribute name="title" value="/WEB-INF/jsp/templateV2/title.jsp" />
+		<put-attribute name="navbar" value="/WEB-INF/jsp/templateV2/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/jsp/templateV2/sidebar.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/templateV2/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="loginLayout" template="/WEB-INF/jsp/templateV2/login_layout.jsp">
+		<put-attribute name="title" value="/WEB-INF/jsp/templateV2/title.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/templateV2/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="minLayout" template="/WEB-INF/jsp/templateV2/min_layout.jsp">
+		<put-attribute name="title" value="/WEB-INF/jsp/templateV2/title.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/templateV2/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<!-- GENERAL -->
+	<definition name="dashboard" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/dashboard.jsp" />
+	</definition>
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	<definition name="error" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+	<definition name="errormin" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+	<definition name="switch" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/switch.jsp" />
+	</definition>
+	<definition name="popup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/popup.jsp" />
+	</definition>
+	<definition name="popupmain" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/popup.jsp" />
+	</definition>
+	<definition name="redirect" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+	<definition name="404" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/404.jsp" />
+	</definition>
+	<definition name="404min" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/404.jsp" />
+	</definition>
+	<!-- System Controller (Template) -->
+	<definition name="userform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/user.jsp" />
+	</definition>
+	<definition name="formform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/form.jsp" />
+	</definition>
+	<definition name="menuform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/menu.jsp" />
+	</definition>
+	<definition name="roleform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/role.jsp" />
+	</definition>
+	<definition name="groupform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/group.jsp" />
+	</definition>
+	<definition name="groupmemberform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/groupuser.jsp" />
+	</definition>
+	<definition name="rolemenuform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/rolemenu.jsp" />
+	</definition>
+	<definition name="passwordform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/password.jsp" />
+	</definition>
+	<definition name="ratingform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/rating.jsp" />
+	</definition>
+	<definition name="cataloglistform" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/form/system/catalog.jsp" />
+	</definition>
+	<!-- System Controller -->
+	<definition name="userview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/user.jsp" />
+	</definition>
+	<definition name="userroleview" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/userrole.jsp" />
+	</definition>
+	<definition name="formview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/form.jsp" />
+	</definition>
+	<definition name="menuview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/menu.jsp" />
+	</definition>
+	<definition name="roleview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/role.jsp" />
+	</definition>
+	<definition name="groupview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/group.jsp" />
+	</definition>
+	<definition name="parameterview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/parameter.jsp" />
+	</definition>
+	<definition name="exceptionview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/exception.jsp" />
+	</definition>
+	<definition name="schedulerlistview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/scheduler.jsp" />
+	</definition>
+	<definition name="logview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/log.jsp" />
+	</definition>
+	<definition name="dbjobslistview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/dbjobs.jsp" />
+	</definition>
+	<definition name="ratingview" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/view/system/rating.jsp" />
+	</definition>
+	<!-- System Lookup -->
+	<definition name="employeelookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/employee.jsp" />
+	</definition>
+	<definition name="subemployeelookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/subemployee.jsp" />
+	</definition>
+	<definition name="userlookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/user.jsp" />
+	</definition>
+	<definition name="positionlookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/position.jsp" />
+	</definition>
+	<definition name="organizationlookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/organization.jsp" />
+	</definition>
+	<definition name="companylookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/company.jsp" />
+	</definition>
+	<definition name="menulookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/menu.jsp" />
+	</definition>
+	<definition name="formlookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/form.jsp" />
+	</definition>
+	<definition name="grouplookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/group.jsp" />
+	</definition>
+	<definition name="employeeinfolookup" extends="minLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/lookup/empinfo.jsp" />
+	</definition>
+</tiles-definitions>

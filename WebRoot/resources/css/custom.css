@@ -1,0 +1,183 @@
+@font-face {
+	font-family: "Gotham Book";
+	src: url(../webfonts/Gotham-Book.otf) format("otf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Book";
+	src: url(../webfonts/Gotham-BookItalic.otf) format("otf");
+	font-style: italic;
+}
+
+body {
+	font-family: "Gotham Book", Nunito, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji";
+}
+
+.border-top-primary {
+	border-top: 0.25rem solid #4e73df !important;
+}
+
+.border-top-secondary {
+	border-top: 0.25rem solid #858796 !important;
+}
+
+.border-top-success {
+	border-top: 0.25rem solid #1cc88a !important;
+}
+
+.border-top-info {
+	border-top: 0.25rem solid #36b9cc !important;
+}
+
+.border-top-warning {
+	border-top: 0.25rem solid #f6c23e !important;
+}
+
+.border-top-danger {
+	border-top: 0.25rem solid #e74a3b !important;
+}
+
+.border-top-light {
+	border-top: 0.25rem solid #f8f9fc !important;
+}
+
+.border-top-dark {
+	border-top: 0.25rem solid #5a5c69 !important;
+}
+
+.sidebar .nav-item .collapse, .sidebar .nav-item .collapsing {
+	margin: 0 0.5rem;
+}
+
+.card {
+	margin-bottom: 10px;
+}
+
+table.table {
+	font-size: 0.8rem;
+}
+
+.table td, .table th {
+	padding: 0.25rem;
+	vertical-align: middle;
+}
+
+.table .btn {
+	font-size: inherit;
+}
+
+.action-row {
+	white-space: nowrap;
+	width: 1%;
+}
+
+.ripple {
+	position: relative;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform: scale(10, 10);
+	opacity: 0;
+	transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+	transform: scale(0, 0);
+	opacity: .2;
+	transition: 0s;
+}
+
+/* sidebar correction */
+.sidebar .nav-item:last-child, .sidebar.toggled .nav-item:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .nav-item .nav-link {
+	width: auto;
+}
+
+.sidebar .nav-item .nav-link.mm-active span {
+	color: lightcoral;
+}
+
+.sidebar {
+	transition: width .5s ease-in-out;
+}
+
+ul.ul-menu {
+	padding-inline-start: 25px;
+	list-style: none;
+}
+
+/* toggle correction */
+.toggle-on.btn-sm {
+	padding-right: 14px;
+}
+
+.toggle-off.btn-sm {
+	padding-left: 14px;
+}
+
+/* Custom Background */
+.bg-gradient-fms {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fc9314+0,ff9e59+35,ff9e59+35,ffda63+100 */
+	background: rgb(252, 147, 20); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgb(252, 147, 20) 0%,
+		rgb(255, 158, 89) 35%, rgb(255, 158, 89) 35%, rgb(255, 218, 99) 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgb(252, 147, 20) 0%,
+		rgb(255, 158, 89) 35%, rgb(255, 158, 89) 35%, rgb(255, 218, 99) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgb(252, 147, 20) 0%,
+		rgb(255, 158, 89) 35%, rgb(255, 158, 89) 35%, rgb(255, 218, 99) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9314',
+		endColorstr='#ffda63', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+}
+
+.bg-gradient-badak {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f9dc0+0,2d6884+40,2d6884+40,dc242a+40,dc242a+40,a5282f+100 */
+	background: rgb(63, 157, 192); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgb(63, 157, 192) 0%,
+		rgb(45, 104, 132) 40%, rgb(45, 104, 132) 40%, rgb(220, 36, 42) 40%,
+		rgb(220, 36, 42) 40%, rgb(165, 40, 47) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgb(63, 157, 192) 0%,
+		rgb(45, 104, 132) 40%, rgb(45, 104, 132) 40%, rgb(220, 36, 42) 40%,
+		rgb(220, 36, 42) 40%, rgb(165, 40, 47) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgb(63, 157, 192) 0%,
+		rgb(45, 104, 132) 40%, rgb(45, 104, 132) 40%, rgb(220, 36, 42) 40%,
+		rgb(220, 36, 42) 40%, rgb(165, 40, 47) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f9dc0',
+		endColorstr='#a5282f', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+}
+
+:required {
+	border-bottom-color: red;
+}
+
+.sidebar .nav-item .nav-link .img-profile, .topbar .nav-item .nav-link .img-profile
+	{
+	height: 3rem;
+	width: 3rem;
+}

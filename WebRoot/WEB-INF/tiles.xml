@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="mainLayout"
+		template="/WEB-INF/jsp/templateV2/main_layout.jsp">
+		<put-attribute name="title"
+			value="/WEB-INF/jsp/templateV2/title.jsp" />
+		<put-attribute name="navbar"
+			value="/WEB-INF/jsp/templateV2/navbar.jsp" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/jsp/templateV2/sidebar.jsp" />
+		<put-attribute name="message"
+			value="/WEB-INF/jsp/templateV2/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="loginLayout"
+		template="/WEB-INF/jsp/templateV2/login_layout.jsp">
+		<put-attribute name="title"
+			value="/WEB-INF/jsp/templateV2/title.jsp" />
+		<put-attribute name="message"
+			value="/WEB-INF/jsp/templateV2/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="minLayout"
+		template="/WEB-INF/jsp/templateV2/min_layout.jsp">
+		<put-attribute name="title"
+			value="/WEB-INF/jsp/template/title.jsp" />
+		<put-attribute name="message"
+			value="/WEB-INF/jsp/template/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="publicLayout"
+		template="/WEB-INF/jsp/templateV2/pub_layout.jsp">
+		<put-attribute name="title"
+			value="/WEB-INF/jsp/templateV2/title.jsp" />
+		<put-attribute name="message"
+			value="/WEB-INF/jsp/templateV2/message.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<!-- Apps Tiles -->
+	<definition name="colcodedlistview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/pm/colcoded.jsp" />
+	</definition>
+	<definition name="colcodedformview" extends="minLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/colcoded.jsp" />
+	</definition>
+	<definition name="locationlistview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/pm/location.jsp" />
+	</definition>
+	<definition name="locationformview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/location.jsp" />
+	</definition>
+	<definition name="eqpttypelistview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/eqpttype.jsp" />
+	</definition>
+	<definition name="eqpttypestatlistview" extends="minLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/eqpttypestat.jsp" />
+	</definition>
+	<definition name="eqptlistview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/pm/eqpt.jsp" />
+	</definition>
+	<definition name="eqptqrcodeview" extends="minLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/pm/eqptqrcode.jsp" />
+	</definition>
+	<definition name="eqptformview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/eqpt.jsp" />
+	</definition>
+	<!-- Public Tiles -->
+	<definition name="eqptlabelview" extends="publicLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/pm/eqptlabel.jsp" />
+	</definition>
+	<definition name="eqptqrscanview" extends="publicLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/scanner.jsp" />
+	</definition>
+	<definition name="eqptinspview" extends="publicLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/form/pm/inspection.jsp" />
+	</definition>
+	<!-- Lookup -->
+	<definition name="loclkpview" extends="minLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/lookup/location.jsp" />
+	</definition>
+
+	<!-- Application -->
+	<definition name="requestlistview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/request.jsp" />
+	</definition>
+	<definition name="requestformview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/requestform.jsp" />
+	</definition>
+	<definition name="requeststatuslistview" extends="minLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/requeststatus.jsp" />
+	</definition>
+	<definition name="requeststatusformview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/requeststatusform.jsp" />
+	</definition>
+	<definition name="teamlistview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/team.jsp" />
+	</definition>
+	<definition name="teamformview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/teamform.jsp" />
+	</definition>
+	<definition name="teammemberview" extends="mainLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/view/teammember.jsp" />
+	</definition>
+</tiles-definitions>
